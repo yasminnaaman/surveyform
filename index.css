@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1#title {
+  text-align: center;
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+p#description {
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto 30px;
+  color: #555;
+}
+
+form#survey-form {
+  background: #fff;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+form#survey-form label {
+  display: block;
+  margin: 20px 0 8px;
+  font-weight: 600;
+}
+
+form#survey-form input[type="text"],
+form#survey-form input[type="email"],
+form#survey-form input[type="number"],
+form#survey-form select,
+form#survey-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+form#survey-form input[type="text"]:focus,
+form#survey-form input[type="email"]:focus,
+form#survey-form input[type="number"]:focus,
+form#survey-form select:focus,
+form#survey-form textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+fieldset legend {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+fieldset label {
+  display: block;
+  margin: 8px 0;
+  font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button#submit {
+  display: block;
+  width: 100%;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 6px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button#submit:hover {
+  background: #2980b9;
+}

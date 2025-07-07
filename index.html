@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Web Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="title">Website Feedback Survey</h1>
+  <p id="description">
+    Welcome! Please fill out this survey to help us improve your experience.
+  </p>
+
+  <form id="survey-form">
+
+   
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+    
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age">
+
+    
+    <label for="dropdown">What best describes your role?</label>
+    <select id="dropdown" name="role">
+      <option value="">--Please choose an option--</option>
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+      <option value="professional">Professional</option>
+    </select>
+
+    
+    <fieldset>
+      <legend>How satisfied are you with our website?</legend>
+      <label><input type="radio" name="satisfaction" value="very-satisfied" required> Very Satisfied</label>
+      <label><input type="radio" name="satisfaction" value="somewhat-satisfied"> Somewhat Satisfied</label>
+      <label><input type="radio" name="satisfaction" value="not-satisfied"> Not Satisfied</label>
+    </fieldset>
+
+    
+    <fieldset>
+      <legend>What features do you use? (Select all that apply)</legend>
+      <label><input type="checkbox" name="features" value="blog"> Blog</label>
+      <label><input type="checkbox" name="features" value="forum"> Forum</label>
+      <label><input type="checkbox" name="features" value="tutorials"> Tutorials</label>
+    </fieldset>
+
+    
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
+
+    
+    <button type="submit" id="submit">Submit Survey</button>
+
+  </form>
+
+</body>
+</html>
